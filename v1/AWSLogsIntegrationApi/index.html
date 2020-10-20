@@ -2,9 +2,6 @@
 <span class=kn>from</span> <span class=nn>dateutil.parser</span> <span class=kn>import</span> <span class=n>parse</span> <span class=k>as</span> <span class=n>dateutil_parser</span>
 <span class=kn>import</span> <span class=nn>datadog_api_client.v1</span>
 <span class=kn>from</span> <span class=nn>datadog_api_client.v1.api</span> <span class=kn>import</span> <span class=n>aws_logs_integration_api</span>
-<span class=kn>from</span> <span class=nn>datadog_api_client.v1.model.aws_logs_async_response</span> <span class=kn>import</span> <span class=n>AWSLogsAsyncResponse</span>
-<span class=kn>from</span> <span class=nn>datadog_api_client.v1.model.aws_account_and_lambda_request</span> <span class=kn>import</span> <span class=n>AWSAccountAndLambdaRequest</span>
-<span class=kn>from</span> <span class=nn>datadog_api_client.v1.model.api_error_response</span> <span class=kn>import</span> <span class=n>APIErrorResponse</span>
 <span class=kn>from</span> <span class=nn>datadog_api_client.v1.models</span> <span class=kn>import</span> <span class=o>*</span>
 <span class=kn>from</span> <span class=nn>pprint</span> <span class=kn>import</span> <span class=n>pprint</span>
 <span class=c1># Defining the host is optional and defaults to https://api.datadoghq.com</span>
@@ -50,9 +47,6 @@
 <span class=kn>from</span> <span class=nn>dateutil.parser</span> <span class=kn>import</span> <span class=n>parse</span> <span class=k>as</span> <span class=n>dateutil_parser</span>
 <span class=kn>import</span> <span class=nn>datadog_api_client.v1</span>
 <span class=kn>from</span> <span class=nn>datadog_api_client.v1.api</span> <span class=kn>import</span> <span class=n>aws_logs_integration_api</span>
-<span class=kn>from</span> <span class=nn>datadog_api_client.v1.model.aws_logs_services_request</span> <span class=kn>import</span> <span class=n>AWSLogsServicesRequest</span>
-<span class=kn>from</span> <span class=nn>datadog_api_client.v1.model.aws_logs_async_response</span> <span class=kn>import</span> <span class=n>AWSLogsAsyncResponse</span>
-<span class=kn>from</span> <span class=nn>datadog_api_client.v1.model.api_error_response</span> <span class=kn>import</span> <span class=n>APIErrorResponse</span>
 <span class=kn>from</span> <span class=nn>datadog_api_client.v1.models</span> <span class=kn>import</span> <span class=o>*</span>
 <span class=kn>from</span> <span class=nn>pprint</span> <span class=kn>import</span> <span class=n>pprint</span>
 <span class=c1># Defining the host is optional and defaults to https://api.datadoghq.com</span>
@@ -100,8 +94,6 @@
 <span class=kn>from</span> <span class=nn>dateutil.parser</span> <span class=kn>import</span> <span class=n>parse</span> <span class=k>as</span> <span class=n>dateutil_parser</span>
 <span class=kn>import</span> <span class=nn>datadog_api_client.v1</span>
 <span class=kn>from</span> <span class=nn>datadog_api_client.v1.api</span> <span class=kn>import</span> <span class=n>aws_logs_integration_api</span>
-<span class=kn>from</span> <span class=nn>datadog_api_client.v1.model.aws_account_and_lambda_request</span> <span class=kn>import</span> <span class=n>AWSAccountAndLambdaRequest</span>
-<span class=kn>from</span> <span class=nn>datadog_api_client.v1.model.api_error_response</span> <span class=kn>import</span> <span class=n>APIErrorResponse</span>
 <span class=kn>from</span> <span class=nn>datadog_api_client.v1.models</span> <span class=kn>import</span> <span class=o>*</span>
 <span class=kn>from</span> <span class=nn>pprint</span> <span class=kn>import</span> <span class=n>pprint</span>
 <span class=c1># Defining the host is optional and defaults to https://api.datadoghq.com</span>
@@ -147,8 +139,6 @@
 <span class=kn>from</span> <span class=nn>dateutil.parser</span> <span class=kn>import</span> <span class=n>parse</span> <span class=k>as</span> <span class=n>dateutil_parser</span>
 <span class=kn>import</span> <span class=nn>datadog_api_client.v1</span>
 <span class=kn>from</span> <span class=nn>datadog_api_client.v1.api</span> <span class=kn>import</span> <span class=n>aws_logs_integration_api</span>
-<span class=kn>from</span> <span class=nn>datadog_api_client.v1.model.aws_account_and_lambda_request</span> <span class=kn>import</span> <span class=n>AWSAccountAndLambdaRequest</span>
-<span class=kn>from</span> <span class=nn>datadog_api_client.v1.model.api_error_response</span> <span class=kn>import</span> <span class=n>APIErrorResponse</span>
 <span class=kn>from</span> <span class=nn>datadog_api_client.v1.models</span> <span class=kn>import</span> <span class=o>*</span>
 <span class=kn>from</span> <span class=nn>pprint</span> <span class=kn>import</span> <span class=n>pprint</span>
 <span class=c1># Defining the host is optional and defaults to https://api.datadoghq.com</span>
@@ -194,8 +184,6 @@
 <span class=kn>from</span> <span class=nn>dateutil.parser</span> <span class=kn>import</span> <span class=n>parse</span> <span class=k>as</span> <span class=n>dateutil_parser</span>
 <span class=kn>import</span> <span class=nn>datadog_api_client.v1</span>
 <span class=kn>from</span> <span class=nn>datadog_api_client.v1.api</span> <span class=kn>import</span> <span class=n>aws_logs_integration_api</span>
-<span class=kn>from</span> <span class=nn>datadog_api_client.v1.model.aws_logs_services_request</span> <span class=kn>import</span> <span class=n>AWSLogsServicesRequest</span>
-<span class=kn>from</span> <span class=nn>datadog_api_client.v1.model.api_error_response</span> <span class=kn>import</span> <span class=n>APIErrorResponse</span>
 <span class=kn>from</span> <span class=nn>datadog_api_client.v1.models</span> <span class=kn>import</span> <span class=o>*</span>
 <span class=kn>from</span> <span class=nn>pprint</span> <span class=kn>import</span> <span class=n>pprint</span>
 <span class=c1># Defining the host is optional and defaults to https://api.datadoghq.com</span>
@@ -243,8 +231,6 @@
 <span class=kn>from</span> <span class=nn>dateutil.parser</span> <span class=kn>import</span> <span class=n>parse</span> <span class=k>as</span> <span class=n>dateutil_parser</span>
 <span class=kn>import</span> <span class=nn>datadog_api_client.v1</span>
 <span class=kn>from</span> <span class=nn>datadog_api_client.v1.api</span> <span class=kn>import</span> <span class=n>aws_logs_integration_api</span>
-<span class=kn>from</span> <span class=nn>datadog_api_client.v1.model.api_error_response</span> <span class=kn>import</span> <span class=n>APIErrorResponse</span>
-<span class=kn>from</span> <span class=nn>datadog_api_client.v1.model.aws_logs_list_response</span> <span class=kn>import</span> <span class=n>AWSLogsListResponse</span>
 <span class=kn>from</span> <span class=nn>datadog_api_client.v1.models</span> <span class=kn>import</span> <span class=o>*</span>
 <span class=kn>from</span> <span class=nn>pprint</span> <span class=kn>import</span> <span class=n>pprint</span>
 <span class=c1># Defining the host is optional and defaults to https://api.datadoghq.com</span>
@@ -286,8 +272,6 @@
 <span class=kn>from</span> <span class=nn>dateutil.parser</span> <span class=kn>import</span> <span class=n>parse</span> <span class=k>as</span> <span class=n>dateutil_parser</span>
 <span class=kn>import</span> <span class=nn>datadog_api_client.v1</span>
 <span class=kn>from</span> <span class=nn>datadog_api_client.v1.api</span> <span class=kn>import</span> <span class=n>aws_logs_integration_api</span>
-<span class=kn>from</span> <span class=nn>datadog_api_client.v1.model.aws_logs_list_services_response</span> <span class=kn>import</span> <span class=n>AWSLogsListServicesResponse</span>
-<span class=kn>from</span> <span class=nn>datadog_api_client.v1.model.api_error_response</span> <span class=kn>import</span> <span class=n>APIErrorResponse</span>
 <span class=kn>from</span> <span class=nn>datadog_api_client.v1.models</span> <span class=kn>import</span> <span class=o>*</span>
 <span class=kn>from</span> <span class=nn>pprint</span> <span class=kn>import</span> <span class=n>pprint</span>
 <span class=c1># Defining the host is optional and defaults to https://api.datadoghq.com</span>

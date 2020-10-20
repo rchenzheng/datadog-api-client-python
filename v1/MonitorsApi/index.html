@@ -2,8 +2,6 @@
 <span class=kn>from</span> <span class=nn>dateutil.parser</span> <span class=kn>import</span> <span class=n>parse</span> <span class=k>as</span> <span class=n>dateutil_parser</span>
 <span class=kn>import</span> <span class=nn>datadog_api_client.v1</span>
 <span class=kn>from</span> <span class=nn>datadog_api_client.v1.api</span> <span class=kn>import</span> <span class=n>monitors_api</span>
-<span class=kn>from</span> <span class=nn>datadog_api_client.v1.model.check_can_delete_monitor_response</span> <span class=kn>import</span> <span class=n>CheckCanDeleteMonitorResponse</span>
-<span class=kn>from</span> <span class=nn>datadog_api_client.v1.model.api_error_response</span> <span class=kn>import</span> <span class=n>APIErrorResponse</span>
 <span class=kn>from</span> <span class=nn>datadog_api_client.v1.models</span> <span class=kn>import</span> <span class=o>*</span>
 <span class=kn>from</span> <span class=nn>pprint</span> <span class=kn>import</span> <span class=n>pprint</span>
 <span class=c1># Defining the host is optional and defaults to https://api.datadoghq.com</span>
@@ -48,8 +46,6 @@
 <span class=kn>from</span> <span class=nn>dateutil.parser</span> <span class=kn>import</span> <span class=n>parse</span> <span class=k>as</span> <span class=n>dateutil_parser</span>
 <span class=kn>import</span> <span class=nn>datadog_api_client.v1</span>
 <span class=kn>from</span> <span class=nn>datadog_api_client.v1.api</span> <span class=kn>import</span> <span class=n>monitors_api</span>
-<span class=kn>from</span> <span class=nn>datadog_api_client.v1.model.api_error_response</span> <span class=kn>import</span> <span class=n>APIErrorResponse</span>
-<span class=kn>from</span> <span class=nn>datadog_api_client.v1.model.monitor</span> <span class=kn>import</span> <span class=n>Monitor</span>
 <span class=kn>from</span> <span class=nn>datadog_api_client.v1.models</span> <span class=kn>import</span> <span class=o>*</span>
 <span class=kn>from</span> <span class=nn>pprint</span> <span class=kn>import</span> <span class=n>pprint</span>
 <span class=c1># Defining the host is optional and defaults to https://api.datadoghq.com</span>
@@ -163,8 +159,6 @@
 <span class=kn>from</span> <span class=nn>dateutil.parser</span> <span class=kn>import</span> <span class=n>parse</span> <span class=k>as</span> <span class=n>dateutil_parser</span>
 <span class=kn>import</span> <span class=nn>datadog_api_client.v1</span>
 <span class=kn>from</span> <span class=nn>datadog_api_client.v1.api</span> <span class=kn>import</span> <span class=n>monitors_api</span>
-<span class=kn>from</span> <span class=nn>datadog_api_client.v1.model.deleted_monitor</span> <span class=kn>import</span> <span class=n>DeletedMonitor</span>
-<span class=kn>from</span> <span class=nn>datadog_api_client.v1.model.api_error_response</span> <span class=kn>import</span> <span class=n>APIErrorResponse</span>
 <span class=kn>from</span> <span class=nn>datadog_api_client.v1.models</span> <span class=kn>import</span> <span class=o>*</span>
 <span class=kn>from</span> <span class=nn>pprint</span> <span class=kn>import</span> <span class=n>pprint</span>
 <span class=c1># Defining the host is optional and defaults to https://api.datadoghq.com</span>
@@ -217,8 +211,6 @@
 <span class=kn>from</span> <span class=nn>dateutil.parser</span> <span class=kn>import</span> <span class=n>parse</span> <span class=k>as</span> <span class=n>dateutil_parser</span>
 <span class=kn>import</span> <span class=nn>datadog_api_client.v1</span>
 <span class=kn>from</span> <span class=nn>datadog_api_client.v1.api</span> <span class=kn>import</span> <span class=n>monitors_api</span>
-<span class=kn>from</span> <span class=nn>datadog_api_client.v1.model.api_error_response</span> <span class=kn>import</span> <span class=n>APIErrorResponse</span>
-<span class=kn>from</span> <span class=nn>datadog_api_client.v1.model.monitor</span> <span class=kn>import</span> <span class=n>Monitor</span>
 <span class=kn>from</span> <span class=nn>datadog_api_client.v1.models</span> <span class=kn>import</span> <span class=o>*</span>
 <span class=kn>from</span> <span class=nn>pprint</span> <span class=kn>import</span> <span class=n>pprint</span>
 <span class=c1># Defining the host is optional and defaults to https://api.datadoghq.com</span>
@@ -271,8 +263,6 @@
 <span class=kn>from</span> <span class=nn>dateutil.parser</span> <span class=kn>import</span> <span class=n>parse</span> <span class=k>as</span> <span class=n>dateutil_parser</span>
 <span class=kn>import</span> <span class=nn>datadog_api_client.v1</span>
 <span class=kn>from</span> <span class=nn>datadog_api_client.v1.api</span> <span class=kn>import</span> <span class=n>monitors_api</span>
-<span class=kn>from</span> <span class=nn>datadog_api_client.v1.model.api_error_response</span> <span class=kn>import</span> <span class=n>APIErrorResponse</span>
-<span class=kn>from</span> <span class=nn>datadog_api_client.v1.model.monitor</span> <span class=kn>import</span> <span class=n>Monitor</span>
 <span class=kn>from</span> <span class=nn>datadog_api_client.v1.models</span> <span class=kn>import</span> <span class=o>*</span>
 <span class=kn>from</span> <span class=nn>pprint</span> <span class=kn>import</span> <span class=n>pprint</span>
 <span class=c1># Defining the host is optional and defaults to https://api.datadoghq.com</span>
@@ -323,9 +313,6 @@
 <span class=kn>from</span> <span class=nn>dateutil.parser</span> <span class=kn>import</span> <span class=n>parse</span> <span class=k>as</span> <span class=n>dateutil_parser</span>
 <span class=kn>import</span> <span class=nn>datadog_api_client.v1</span>
 <span class=kn>from</span> <span class=nn>datadog_api_client.v1.api</span> <span class=kn>import</span> <span class=n>monitors_api</span>
-<span class=kn>from</span> <span class=nn>datadog_api_client.v1.model.monitor_update_request</span> <span class=kn>import</span> <span class=n>MonitorUpdateRequest</span>
-<span class=kn>from</span> <span class=nn>datadog_api_client.v1.model.api_error_response</span> <span class=kn>import</span> <span class=n>APIErrorResponse</span>
-<span class=kn>from</span> <span class=nn>datadog_api_client.v1.model.monitor</span> <span class=kn>import</span> <span class=n>Monitor</span>
 <span class=kn>from</span> <span class=nn>datadog_api_client.v1.models</span> <span class=kn>import</span> <span class=o>*</span>
 <span class=kn>from</span> <span class=nn>pprint</span> <span class=kn>import</span> <span class=n>pprint</span>
 <span class=c1># Defining the host is optional and defaults to https://api.datadoghq.com</span>
@@ -440,8 +427,6 @@
 <span class=kn>from</span> <span class=nn>dateutil.parser</span> <span class=kn>import</span> <span class=n>parse</span> <span class=k>as</span> <span class=n>dateutil_parser</span>
 <span class=kn>import</span> <span class=nn>datadog_api_client.v1</span>
 <span class=kn>from</span> <span class=nn>datadog_api_client.v1.api</span> <span class=kn>import</span> <span class=n>monitors_api</span>
-<span class=kn>from</span> <span class=nn>datadog_api_client.v1.model.api_error_response</span> <span class=kn>import</span> <span class=n>APIErrorResponse</span>
-<span class=kn>from</span> <span class=nn>datadog_api_client.v1.model.monitor</span> <span class=kn>import</span> <span class=n>Monitor</span>
 <span class=kn>from</span> <span class=nn>datadog_api_client.v1.models</span> <span class=kn>import</span> <span class=o>*</span>
 <span class=kn>from</span> <span class=nn>pprint</span> <span class=kn>import</span> <span class=n>pprint</span>
 <span class=c1># Defining the host is optional and defaults to https://api.datadoghq.com</span>
