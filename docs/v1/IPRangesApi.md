@@ -23,12 +23,8 @@ from datadog_api_client.v1 import ApiClient, ApiException, Configuration
 from datadog_api_client.v1.api import ip_ranges_api
 from datadog_api_client.v1.models import *
 from pprint import pprint
-# See configuration.py for a list of all supported configuration parameters.
-configuration = Configuration()
 
-# Defining the site is optional and defaults to datadoghq.com
-if "DD_SITE" in os.environ:
-    configuration.server_variables["site"] = os.environ["DD_SITE"]
+configuration = Configuration()
 
 # Enter a context with an instance of the API client
 with ApiClient() as api_client:

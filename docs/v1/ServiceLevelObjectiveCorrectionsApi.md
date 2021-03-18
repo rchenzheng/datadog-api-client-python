@@ -29,18 +29,8 @@ from datadog_api_client.v1 import ApiClient, ApiException, Configuration
 from datadog_api_client.v1.api import service_level_objective_corrections_api
 from datadog_api_client.v1.models import *
 from pprint import pprint
-# See configuration.py for a list of all supported configuration parameters.
+
 configuration = Configuration()
-
-# Defining the site is optional and defaults to datadoghq.com
-if "DD_SITE" in os.environ:
-    configuration.server_variables["site"] = os.environ["DD_SITE"]
-
-# Configure API key authorization: apiKeyAuth
-configuration.api_key['apiKeyAuth'] = os.getenv('DD_CLIENT_API_KEY')
-
-# Configure API key authorization: appKeyAuth
-configuration.api_key['appKeyAuth'] = os.getenv('DD_CLIENT_APP_KEY')
 configuration.unstable_operations["create_slo_correction"] = True
 
 # Enter a context with an instance of the API client
@@ -116,18 +106,8 @@ from datadog_api_client.v1 import ApiClient, ApiException, Configuration
 from datadog_api_client.v1.api import service_level_objective_corrections_api
 from datadog_api_client.v1.models import *
 from pprint import pprint
-# See configuration.py for a list of all supported configuration parameters.
+
 configuration = Configuration()
-
-# Defining the site is optional and defaults to datadoghq.com
-if "DD_SITE" in os.environ:
-    configuration.server_variables["site"] = os.environ["DD_SITE"]
-
-# Configure API key authorization: apiKeyAuth
-configuration.api_key['apiKeyAuth'] = os.getenv('DD_CLIENT_API_KEY')
-
-# Configure API key authorization: appKeyAuth
-configuration.api_key['appKeyAuth'] = os.getenv('DD_CLIENT_APP_KEY')
 configuration.unstable_operations["delete_slo_correction"] = True
 
 # Enter a context with an instance of the API client
@@ -190,18 +170,8 @@ from datadog_api_client.v1 import ApiClient, ApiException, Configuration
 from datadog_api_client.v1.api import service_level_objective_corrections_api
 from datadog_api_client.v1.models import *
 from pprint import pprint
-# See configuration.py for a list of all supported configuration parameters.
+
 configuration = Configuration()
-
-# Defining the site is optional and defaults to datadoghq.com
-if "DD_SITE" in os.environ:
-    configuration.server_variables["site"] = os.environ["DD_SITE"]
-
-# Configure API key authorization: apiKeyAuth
-configuration.api_key['apiKeyAuth'] = os.getenv('DD_CLIENT_API_KEY')
-
-# Configure API key authorization: appKeyAuth
-configuration.api_key['appKeyAuth'] = os.getenv('DD_CLIENT_APP_KEY')
 configuration.unstable_operations["get_slo_correction"] = True
 
 # Enter a context with an instance of the API client
@@ -265,18 +235,8 @@ from datadog_api_client.v1 import ApiClient, ApiException, Configuration
 from datadog_api_client.v1.api import service_level_objective_corrections_api
 from datadog_api_client.v1.models import *
 from pprint import pprint
-# See configuration.py for a list of all supported configuration parameters.
+
 configuration = Configuration()
-
-# Defining the site is optional and defaults to datadoghq.com
-if "DD_SITE" in os.environ:
-    configuration.server_variables["site"] = os.environ["DD_SITE"]
-
-# Configure API key authorization: apiKeyAuth
-configuration.api_key['apiKeyAuth'] = os.getenv('DD_CLIENT_API_KEY')
-
-# Configure API key authorization: appKeyAuth
-configuration.api_key['appKeyAuth'] = os.getenv('DD_CLIENT_APP_KEY')
 configuration.unstable_operations["list_slo_correction"] = True
 
 # Enter a context with an instance of the API client
@@ -335,18 +295,8 @@ from datadog_api_client.v1 import ApiClient, ApiException, Configuration
 from datadog_api_client.v1.api import service_level_objective_corrections_api
 from datadog_api_client.v1.models import *
 from pprint import pprint
-# See configuration.py for a list of all supported configuration parameters.
+
 configuration = Configuration()
-
-# Defining the site is optional and defaults to datadoghq.com
-if "DD_SITE" in os.environ:
-    configuration.server_variables["site"] = os.environ["DD_SITE"]
-
-# Configure API key authorization: apiKeyAuth
-configuration.api_key['apiKeyAuth'] = os.getenv('DD_CLIENT_API_KEY')
-
-# Configure API key authorization: appKeyAuth
-configuration.api_key['appKeyAuth'] = os.getenv('DD_CLIENT_APP_KEY')
 configuration.unstable_operations["update_slo_correction"] = True
 
 # Enter a context with an instance of the API client
