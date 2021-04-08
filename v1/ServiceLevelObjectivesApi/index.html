@@ -45,7 +45,15 @@ with ApiClient(configuration) as api_client:
             numerator=&quot;sum:my.custom.metric{type:good}.as_count()&quot;,
         ),
         tags=[&quot;env:prod&quot;,&quot;app:core&quot;],
-        thresholds=[{&quot;target&quot;:95,&quot;timeframe&quot;:&quot;7d&quot;},{&quot;target&quot;:95,&quot;timeframe&quot;:&quot;30d&quot;,&quot;warning&quot;:97}],
+        thresholds=[
+            SLOThreshold(
+                target=99.9,
+                target_display=&quot;99.9&quot;,
+                timeframe=SLOTimeframe(&quot;7d&quot;),
+                warning=90.0,
+                warning_display=&quot;90.0&quot;,
+            ),
+        ],
         type=SLOType(&quot;metric&quot;),
     )  # ServiceLevelObjectiveRequest | Service level objective request object.
 
@@ -224,7 +232,15 @@ with ApiClient(configuration) as api_client:
             numerator=&quot;sum:my.custom.metric{type:good}.as_count()&quot;,
         ),
         tags=[&quot;env:prod&quot;,&quot;app:core&quot;],
-        thresholds=[{&quot;target&quot;:95,&quot;timeframe&quot;:&quot;7d&quot;},{&quot;target&quot;:95,&quot;timeframe&quot;:&quot;30d&quot;,&quot;warning&quot;:97}],
+        thresholds=[
+            SLOThreshold(
+                target=99.9,
+                target_display=&quot;99.9&quot;,
+                timeframe=SLOTimeframe(&quot;7d&quot;),
+                warning=90.0,
+                warning_display=&quot;90.0&quot;,
+            ),
+        ],
         type=SLOType(&quot;metric&quot;),
     )  # ServiceLevelObjective | The edited service level objective request object.
 
