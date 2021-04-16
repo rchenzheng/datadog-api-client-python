@@ -1,6 +1,6 @@
 interactions:
 - request:
-    body: '{"name": "Test-Delete_an_existing_rule_returns_OK_response-1617999672",
+    body: '{"name": "Test-Delete_an_existing_rule_returns_OK_response-1618576117",
       "queries": [{"query": "@test:true", "aggregation": "count", "groupByFields":
       [], "distinctFields": [], "metric": ""}], "filters": [], "cases": [{"name":
       "", "status": "info", "condition": "a > 0", "notifications": []}], "options":
@@ -15,14 +15,15 @@ interactions:
       Dd-Operation-Id:
       - CreateSecurityMonitoringRule
       User-Agent:
-      - datadog-api-client-python/1.0.0b8.dev29 (python 3.8.8; os Darwin; arch x86_64)
+      - datadog-api-client-python/1.0.0b9.dev1+dirty (python 3.8.8; os Darwin; arch
+        x86_64)
     method: POST
     uri: https://api.datadoghq.com/api/v2/security_monitoring/rules
   response:
     body:
       string: '{"creationAuthorId":1445416,"tags":[],"isEnabled":true,"hasExtendedTitle":false,"message":"Test
-        rule","options":{"detectionMethod":"threshold","evaluationWindow":900,"maxSignalDuration":86400,"keepAlive":3600},"version":1,"createdAt":1617999672465,"filters":[],"queries":[{"distinctFields":[],"name":"","metric":"","aggregation":"count","groupByFields":[],"query":"@test:true","trackType":"logs"}],"isDeleted":false,"cases":[{"status":"info","notifications":[],"name":"","condition":"a
-        > 0"}],"type":"log_detection","id":"o4w-qjs-qqg","isDefault":false,"name":"Test-Delete_an_existing_rule_returns_OK_response-1617999672"}'
+        rule","options":{"detectionMethod":"threshold","evaluationWindow":900,"maxSignalDuration":86400,"keepAlive":3600},"version":1,"createdAt":1618576117712,"filters":[],"queries":[{"distinctFields":[],"name":"","metric":"","aggregation":"count","groupByFields":[],"query":"@test:true","trackType":"logs"}],"isDeleted":false,"cases":[{"status":"info","notifications":[],"name":"","condition":"a
+        > 0"}],"type":"log_detection","id":"two-ais-bfc","isDefault":false,"name":"Test-Delete_an_existing_rule_returns_OK_response-1618576117"}'
     headers:
       Connection:
       - keep-alive
@@ -31,7 +32,7 @@ interactions:
       Content-Type:
       - application/json;charset=utf-8
       Date:
-      - Fri, 09 Apr 2021 20:21:12 GMT
+      - Fri, 16 Apr 2021 12:28:37 GMT
       cache-control:
       - no-cache
       content-disposition:
@@ -47,9 +48,9 @@ interactions:
       x-content-type-options:
       - nosniff
       x-dd-debug:
-      - 2328yjLSqI4XmR1pVqrPRR/SFcQsbafjEpPmZx7/3PfxUK1nJQQsX+wrMelyVyj+
+      - dPySkcOzIZtKyMKDAAzuysY3gNGGj6RtYogGuSb76E8mPvoqzREyRp6lPYm91hQU
       x-dd-version:
-      - '35.4280781'
+      - '35.4327775'
       x-frame-options:
       - SAMEORIGIN
     status:
@@ -65,9 +66,10 @@ interactions:
       Dd-Operation-Id:
       - DeleteSecurityMonitoringRule
       User-Agent:
-      - datadog-api-client-python/1.0.0b8.dev29 (python 3.8.8; os Darwin; arch x86_64)
+      - datadog-api-client-python/1.0.0b9.dev1+dirty (python 3.8.8; os Darwin; arch
+        x86_64)
     method: DELETE
-    uri: https://api.datadoghq.com/api/v2/security_monitoring/rules/o4w-qjs-qqg
+    uri: https://api.datadoghq.com/api/v2/security_monitoring/rules/two-ais-bfc
   response:
     body:
       string: ''
@@ -77,7 +79,7 @@ interactions:
       Content-Length:
       - '0'
       Date:
-      - Fri, 09 Apr 2021 20:21:12 GMT
+      - Fri, 16 Apr 2021 12:28:38 GMT
       cache-control:
       - no-cache
       content-disposition:
@@ -91,9 +93,9 @@ interactions:
       x-content-type-options:
       - nosniff
       x-dd-debug:
-      - LcgNasIYBRkNppmD6mCKE9J6iv0eEjosuuHR5V5zw2fWbR54i39C8dhdK8zDq/40
+      - 25u1gDlL724DHllbjFT4BhOLorBTilh+aah2uWAUEjFC/+rjczJdiyWrV/HwLwe/
       x-dd-version:
-      - '35.4280781'
+      - '35.4327775'
       x-frame-options:
       - SAMEORIGIN
     status:
@@ -109,12 +111,13 @@ interactions:
       Dd-Operation-Id:
       - DeleteSecurityMonitoringRule
       User-Agent:
-      - datadog-api-client-python/1.0.0b8.dev29 (python 3.8.8; os Darwin; arch x86_64)
+      - datadog-api-client-python/1.0.0b9.dev1+dirty (python 3.8.8; os Darwin; arch
+        x86_64)
     method: DELETE
-    uri: https://api.datadoghq.com/api/v2/security_monitoring/rules/o4w-qjs-qqg
+    uri: https://api.datadoghq.com/api/v2/security_monitoring/rules/two-ais-bfc
   response:
     body:
-      string: '{"errors":["Threat detection rule not found: o4w-qjs-qqg"]}'
+      string: '{"errors":["Threat detection rule not found: two-ais-bfc"]}'
     headers:
       Connection:
       - keep-alive
@@ -123,7 +126,7 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Fri, 09 Apr 2021 20:21:13 GMT
+      - Fri, 16 Apr 2021 12:28:38 GMT
       cache-control:
       - no-cache
       content-security-policy:
@@ -137,7 +140,7 @@ interactions:
       x-content-type-options:
       - nosniff
       x-dd-version:
-      - '35.4280781'
+      - '35.4327775'
       x-frame-options:
       - SAMEORIGIN
     status:
