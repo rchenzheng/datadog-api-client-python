@@ -75,8 +75,8 @@ class MetricTagConfigurationAttributes(ModelNormal):
             "created_at": (datetime,),  # noqa: E501
             "include_percentiles": (bool,),  # noqa: E501
             "metric_type": (MetricTagConfigurationMetricTypes,),  # noqa: E501
-            "modified_at": (datetime,),  # noqa: E501
             "tags": ([str],),  # noqa: E501
+            "updated_at": (datetime,),  # noqa: E501
         }
 
     @cached_property
@@ -87,8 +87,8 @@ class MetricTagConfigurationAttributes(ModelNormal):
         "created_at": "created_at",  # noqa: E501
         "include_percentiles": "include_percentiles",  # noqa: E501
         "metric_type": "metric_type",  # noqa: E501
-        "modified_at": "modified_at",  # noqa: E501
         "tags": "tags",  # noqa: E501
+        "updated_at": "updated_at",  # noqa: E501
     }
 
     _composed_schemas = {}
@@ -142,8 +142,8 @@ class MetricTagConfigurationAttributes(ModelNormal):
             created_at (datetime): Timestamp when the tag configuration was created.. [optional]  # noqa: E501
             include_percentiles (bool): Toggle to turn on/off percentile aggregations for distribution metrics. Only present when the `metric_type` is `distribution`.. [optional]  # noqa: E501
             metric_type (MetricTagConfigurationMetricTypes): [optional]  # noqa: E501
-            modified_at (datetime): Timestamp when the tag configuration was last modified.. [optional]  # noqa: E501
             tags ([str]): List of tag keys on which to group.. [optional]  # noqa: E501
+            updated_at (datetime): Timestamp when the tag configuration was last updated.. [optional]  # noqa: E501
         """
 
         _check_type = kwargs.pop("_check_type", True)
