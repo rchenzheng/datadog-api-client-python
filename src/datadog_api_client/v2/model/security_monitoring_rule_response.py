@@ -27,11 +27,13 @@ def lazy_import():
     from datadog_api_client.v2.model.security_monitoring_rule_case import SecurityMonitoringRuleCase
     from datadog_api_client.v2.model.security_monitoring_rule_options import SecurityMonitoringRuleOptions
     from datadog_api_client.v2.model.security_monitoring_rule_query import SecurityMonitoringRuleQuery
+    from datadog_api_client.v2.model.security_monitoring_rule_type import SecurityMonitoringRuleType
 
     globals()["SecurityMonitoringFilter"] = SecurityMonitoringFilter
     globals()["SecurityMonitoringRuleCase"] = SecurityMonitoringRuleCase
     globals()["SecurityMonitoringRuleOptions"] = SecurityMonitoringRuleOptions
     globals()["SecurityMonitoringRuleQuery"] = SecurityMonitoringRuleQuery
+    globals()["SecurityMonitoringRuleType"] = SecurityMonitoringRuleType
 
 
 class SecurityMonitoringRuleResponse(ModelNormal):
@@ -82,6 +84,7 @@ class SecurityMonitoringRuleResponse(ModelNormal):
             "created_at": (int,),  # noqa: E501
             "creation_author_id": (int,),  # noqa: E501
             "filters": ([SecurityMonitoringFilter],),  # noqa: E501
+            "has_extended_title": (bool,),  # noqa: E501
             "id": (str,),  # noqa: E501
             "is_default": (bool,),  # noqa: E501
             "is_deleted": (bool,),  # noqa: E501
@@ -91,6 +94,8 @@ class SecurityMonitoringRuleResponse(ModelNormal):
             "options": (SecurityMonitoringRuleOptions,),  # noqa: E501
             "queries": ([SecurityMonitoringRuleQuery],),  # noqa: E501
             "tags": ([str],),  # noqa: E501
+            "type": (SecurityMonitoringRuleType,),  # noqa: E501
+            "update_author_id": (int,),  # noqa: E501
             "version": (int,),  # noqa: E501
         }
 
@@ -103,6 +108,7 @@ class SecurityMonitoringRuleResponse(ModelNormal):
         "created_at": "createdAt",  # noqa: E501
         "creation_author_id": "creationAuthorId",  # noqa: E501
         "filters": "filters",  # noqa: E501
+        "has_extended_title": "hasExtendedTitle",  # noqa: E501
         "id": "id",  # noqa: E501
         "is_default": "isDefault",  # noqa: E501
         "is_deleted": "isDeleted",  # noqa: E501
@@ -112,6 +118,8 @@ class SecurityMonitoringRuleResponse(ModelNormal):
         "options": "options",  # noqa: E501
         "queries": "queries",  # noqa: E501
         "tags": "tags",  # noqa: E501
+        "type": "type",  # noqa: E501
+        "update_author_id": "updateAuthorId",  # noqa: E501
         "version": "version",  # noqa: E501
     }
 
@@ -167,6 +175,7 @@ class SecurityMonitoringRuleResponse(ModelNormal):
             created_at (int): When the rule was created, timestamp in milliseconds.. [optional]  # noqa: E501
             creation_author_id (int): User ID of the user who created the rule.. [optional]  # noqa: E501
             filters ([SecurityMonitoringFilter]): Additional queries to filter matched events before they are processed.. [optional]  # noqa: E501
+            has_extended_title (bool): Whether the notifications include the triggering group-by values in their title.. [optional]  # noqa: E501
             id (str): The ID of the rule.. [optional]  # noqa: E501
             is_default (bool): Whether the rule is included by default.. [optional]  # noqa: E501
             is_deleted (bool): Whether the rule has been deleted.. [optional]  # noqa: E501
@@ -176,6 +185,8 @@ class SecurityMonitoringRuleResponse(ModelNormal):
             options (SecurityMonitoringRuleOptions): [optional]  # noqa: E501
             queries ([SecurityMonitoringRuleQuery]): Queries for selecting logs which are part of the rule.. [optional]  # noqa: E501
             tags ([str]): Tags for generated signals.. [optional]  # noqa: E501
+            type (SecurityMonitoringRuleType): [optional]  # noqa: E501
+            update_author_id (int): User ID of the user who updated the rule.. [optional]  # noqa: E501
             version (int): The version of the rule.. [optional]  # noqa: E501
         """
 

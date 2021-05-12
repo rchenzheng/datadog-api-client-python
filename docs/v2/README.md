@@ -450,6 +450,7 @@ Class | Method | HTTP request | Description
  - [SecurityMonitoringRuleQueryCreate](SecurityMonitoringRuleQueryCreate.md)
  - [SecurityMonitoringRuleResponse](SecurityMonitoringRuleResponse.md)
  - [SecurityMonitoringRuleSeverity](SecurityMonitoringRuleSeverity.md)
+ - [SecurityMonitoringRuleType](SecurityMonitoringRuleType.md)
  - [SecurityMonitoringRuleUpdatePayload](SecurityMonitoringRuleUpdatePayload.md)
  - [SecurityMonitoringRuntimeAgentRule](SecurityMonitoringRuntimeAgentRule.md)
  - [SecurityMonitoringSignal](SecurityMonitoringSignal.md)

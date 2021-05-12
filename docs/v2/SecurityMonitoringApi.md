@@ -55,9 +55,10 @@ with ApiClient(configuration) as api_client:
                 query="query_example",
             ),
         ],
+        has_extended_title=True,
         is_enabled=True,
         message="",
-        name="",
+        name="My security monitoring rule.",
         options=SecurityMonitoringRuleOptions(
             detection_method=SecurityMonitoringRuleDetectionMethod("threshold"),
             evaluation_window=SecurityMonitoringRuleEvaluationWindow(0),
@@ -83,10 +84,11 @@ with ApiClient(configuration) as api_client:
                 ],
                 metric="metric_example",
                 name="name_example",
-                query="a < 3",
+                query="a > 3",
             ),
         ],
         tags=["env:prod","team:security"],
+        type=SecurityMonitoringRuleType("log_detection"),
     )  # SecurityMonitoringRuleCreatePayload | 
 
     # example passing only required values which don't have defaults set
@@ -526,6 +528,7 @@ with ApiClient(configuration) as api_client:
                 query="query_example",
             ),
         ],
+        has_extended_title=True,
         is_enabled=True,
         message="message_example",
         name="name_example",
@@ -560,6 +563,7 @@ with ApiClient(configuration) as api_client:
         tags=[
             "tags_example",
         ],
+        version=1,
     )  # SecurityMonitoringRuleUpdatePayload | 
 
     # example passing only required values which don't have defaults set
